@@ -93,6 +93,18 @@
                         <i class="i-Lock-User mr-1"></i> {{Auth::user()->fname}} {{Auth::user()->lname}}
                     </div>
                     <a class="dropdown-item" href="{{url('user/profile')}}">User Profile</a>
+                    <a class="dropdown-item"><small>Manage Team</small></a>
+                    <a class="dropdown-item" href="{{url('teams', Auth::user()->currentTeam->id)}}">Team Settings</a>
+                    <a class="dropdown-item" href="{{url('teams/create')}}">Create New Team</a>
+                    <a class="dropdown-item"><small>Switch Teams</small></a>
+                    @forelse(Auth::user()->allTeams() as $team)
+                        @if(Auth::user()->currentTeam->id  == $team->id)
+                            <a class="dropdown-item" href="{{url('teams/switch', $team->id)}}"><i class="text-success fa fa-check-circle"></i> {{$team->name}}</a>
+                        @else
+                            <a class="dropdown-item" href="{{url('teams/switch', $team->id)}}">{{$team->name}}</a>
+                        @endif
+                    @empty
+                    @endforelse
                     <a class="dropdown-item" href="{{url('logout')}}">Sign out</a>
                 </div>
             </div>

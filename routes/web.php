@@ -64,9 +64,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
 	//Route::get('settings/createcalendar',  [SettingController::class, 'createCalendar']);
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+//Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', 'invoices')->name('dashboard');
+
+Route::get('teams/switch/{team}', [HomeController::class, 'switchteam']);
 
 Route::get('logout', function (){
 	# code...

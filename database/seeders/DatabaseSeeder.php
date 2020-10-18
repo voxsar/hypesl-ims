@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         
-        User::factory()->create(['email' => 'voxsar@gmail.com']);
+        User::factory()->create(['email' => 'voxsar@gmail.com', 'fname' => 'Miyuru', 'lname' => 'Dharmage']);
         Team::factory()->create([
             'user_id' => '1',
             'personal_team' => '1',

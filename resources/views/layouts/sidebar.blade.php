@@ -23,7 +23,7 @@
         </li>
         <li class="nav-item" data-item="projects">
             <a class="nav-item-hold" href="#">
-                <i class="fa fa-2x project-diagram"></i>
+                <i class="fa fa-2x fa-project-diagram"></i>
                 <span class="nav-text">Projects</span>
             </a>
             <div class="triangle"></div>

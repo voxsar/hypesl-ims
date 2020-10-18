@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +26,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function switchteam(Team $team)
+    {
+        # code...
+        Auth::user()->current_team_id = $team->id;
+        Auth::user()->save();
+        return redirect()->back();
     }
 }
