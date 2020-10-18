@@ -1,5 +1,5 @@
 
-<table id="invoice" class="table table-sm table-striped table-hover" style="width:100%">
+<table id="transaction" class="table table-sm table-striped table-hover" style="width:100%">
 	<thead>
 		<tr>
 			<th>Transaction No</th>

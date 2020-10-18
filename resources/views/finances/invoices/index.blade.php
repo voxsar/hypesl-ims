@@ -2,7 +2,10 @@
 @section('content')
 	<x-breadcrumb pagename="Invoices" />
 	<div class="card">
-		<div class="card-header">Invoices</div>
+		<div class="card-header">
+			Invoices
+			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('invoices.create')}}">Add Invoice</a>
+		</div>
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-12">

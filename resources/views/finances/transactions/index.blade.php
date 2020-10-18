@@ -1,8 +1,11 @@
 @extends('layouts.index')
 @section('content')
-	<x-breadcrumb pagename="Invoices" />
+	<x-breadcrumb pagename="Transactions" />
 	<div class="card">
-		<div class="card-header">Invoices</div>
+		<div class="card-header">
+			Transactions
+			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('transaction.create')}}">Add Transaction</a>
+		</div>
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-12">
@@ -21,7 +24,7 @@
 	<script type="text/javascript" src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
 	<script type="text/javascript">
 		$(document).ready( function () {
-			$('#invoice').DataTable({
+			$('#transaction').DataTable({
 				responsive: true,
 				columnDefs: [
 					{ responsivePriority: 1, targets: -1 },

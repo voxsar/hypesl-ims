@@ -1,18 +1,18 @@
 @extends('layouts.index')
 @section('content')
-    <x-breadcrumb pagename="View Invoice" />
+    <x-breadcrumb pagename="View Transaction" />
     <div class="card">
         <div class="card-body">
             <div class="d-sm-flex mb-5" data-view="print"><span class="m-auto"></span>
-                <a href="{{url('invoices', $invoice->id)}}/edit" class="btn btn-primary">Edit Invoice</a>&nbsp;
-                <button onclick="window.print()" class="btn btn-primary mb-sm-0 mb-3 print-invoice">Print Invoice</button>&nbsp;
-                <a href="{{route('invoices.payments.index', ['invoice' => $invoice])}}" class="btn btn-success mb-sm-0 mb-3 print-invoice">View Payments</a>
+                <a href="{{url('invoices', $invoice->id)}}/edit" class="btn btn-primary">Edit Transaction</a>&nbsp;
+                <button onclick="window.print()" class="btn btn-primary mb-sm-0 mb-3 print-invoice">Print Transaction</button>&nbsp;
+                <a href="{{route('invoices.payments.index', ['invoice' => $invoice])}}" class="btn btn-success mb-sm-0 mb-3 print-invoice">View Transactions</a>
             </div>
             <!-- -===== Print Area =======-->
             <div id="print-area">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4 class="font-weight-bold">Invoice Info</h4>
+                        <h4 class="font-weight-bold">Transaction Info</h4>
                         <p>{{$invoice->invoice_no}}</p>
                     </div>
                     <div class="col-md-6 text-sm-right">
