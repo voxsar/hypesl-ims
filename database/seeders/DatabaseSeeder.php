@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
         
         User::factory()->create(['email' => 'voxsar@gmail.com', 'fname' => 'Miyuru', 'lname' => 'Dharmage']);
         Team::factory()->create([
+            'name' => 'Hype Sri Lanka'
             'user_id' => '1',
             'personal_team' => '1',
         ]);
