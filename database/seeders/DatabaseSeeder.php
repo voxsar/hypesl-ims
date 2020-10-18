@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
         ]);
         AppointmentColor::create([
             'name' => 'blue',
-            'color' => '#0000ff'
+            'hex' => '#0000ff'
         ]);
         AppointmentConstraint::create([
             'name' => 'Public Holiday'
