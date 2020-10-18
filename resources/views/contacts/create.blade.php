@@ -20,10 +20,8 @@
 						    	<x-input name="postal" label="Postal"/>
 						    	<x-select2 name="type" label="Type">
 						    		<x-slot name="options">
-						    			<option value="child">Child</option>
-						    			<option value="parent">Parent</option>
-						    			<option value="guardian">Guardian</option>
-						    			<option value="teacher">Teacher</option>
+						    			<option value="Volunteer">Volunteer</option>
+						    			<option value="Paid Volunteer">Paid Volunteer</option>
 						    		</x-slot>
 						    	</x-select2>
 						    	<label class="form-label">Remarks</label>
