@@ -83,19 +83,6 @@
 						<h2 data-seq class="seq-title">You and I we're special</h2>
 					</div>
 				</li>
-
-				<li class="seq-step3" id="step3">
-					<div class="seq-content">
-						<h2 data-seq class="seq-title">You can call me Boyle</h2>
-					</div>
-				</li>
-
-				<li class="seq-step3" id="step3">
-					<div class="seq-content">
-						<h2 data-seq class="seq-title">Oh now I get it, 'internal'</h2>
-					</div>
-				</li>
-
 			</ul>
 		</div>
 	</div>

@@ -77,6 +77,6 @@ Route::get('logout', function (){
 	return redirect(route('login'));
 });
 
-Route::get('test', function (){
-	return view("test.index");
+Route::get('firstrun', function (){
+	return view("auth.first-time");
 });
