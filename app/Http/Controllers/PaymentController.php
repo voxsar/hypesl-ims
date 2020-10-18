@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Invoice;
 use App\Models\Payment;
 use App\Models\Account;
 use App\Models\Journal;
