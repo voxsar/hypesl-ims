@@ -21,6 +21,13 @@
             </a>
             <div class="triangle"></div>
         </li>
+        <li class="nav-item" data-item="projects">
+            <a class="nav-item-hold" href="#">
+                <i class="fa fa-2x project-diagram"></i>
+                <span class="nav-text">Projects</span>
+            </a>
+            <div class="triangle"></div>
+        </li>
         <li class="nav-item" data-item="contacts">
             <a class="nav-item-hold" href="#">
                 <i class="fa fa-2x fa-users"></i>
@@ -145,6 +152,25 @@
                 <a href="{{url('topics')}}">
                     <i class="fa fa-plus"></i>&nbsp;
                     <span class="item-name">Start New Communication</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Submenu Projects -->
+    <div class="submenu-area" data-parent="projects">
+        <header>
+            <h6>Projects</h6>
+            <p>Manage your Projects</p>
+        </header>
+        <ul class="childNav">
+            <li class="nav-item">
+                <a href="{{url('projects')}}">
+                    <i class="fa fa-eye"></i>&nbsp;
+                    <span class="item-name">View Projects</span>
+                </a>
+                <a href="{{url('projects/create')}}">
+                    <i class="fa fa-plus"></i>&nbsp;
+                    <span class="item-name">New Project</span>
                 </a>
             </li>
         </ul>
