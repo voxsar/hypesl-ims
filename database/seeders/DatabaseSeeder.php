@@ -33,22 +33,29 @@ class DatabaseSeeder extends Seeder
             'user_id' => '1',
             'personal_team' => '1',
         ]);
-        User::factory()->count(10)->create();
-        Contact::factory()->count(2)->create();
+        //User::factory()->count(10)->create();
+        //Contact::factory()->count(2)->create();
         //Invoice::factory()->count(5)->create();
         
-        AppointmentType::factory()->count(2)->create();
-        AppointmentColor::factory()->count(2)->create();
-        AppointmentConstraint::factory()->count(2)->create();
+        AppointmentType::create([
+            'name' => 'Monthly Meetin'
+        ]);
+        AppointmentColor::create([
+            'name' => 'blue',
+            'color' => '#0000ff'
+        ]);
+        AppointmentConstraint::create([
+            'name' => 'Public Holiday'
+        ]);
 
-        Appointment::factory()->count(20)->create();
+        //Appointment::factory()->count(20)->create();
 
-        Payment::factory()->count(5)->create();
+        //Payment::factory()->count(5)->create();
         //factory(App\ContactRelationshipType::class, 5)->create();
         DB::table('contact_relationship_types')->insert([
-            ['name' => 'Teacher'],
-            ['name' => 'Parent'],
-            ['name' => 'Guardian'],
+            ['name' => 'Mentor'],
+            ['name' => 'Inductor'],
+            ['name' => 'Sibling'],
         ]);
 
         DB::table('team_user')->insert([
@@ -59,7 +66,7 @@ class DatabaseSeeder extends Seeder
             ],
         ]);
 
-        MessageTopic::factory()->count(20)->create();
-        Message::factory()->count(200)->create();
+        //MessageTopic::factory()->count(20)->create();
+        //Message::factory()->count(200)->create();
     }
 }
