@@ -4,7 +4,7 @@
 	<div class="card">
 		<div class="card-header">
 			Transactions
-			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('transaction.create')}}">Add Transaction</a>
+			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('transactions.create')}}">Add Transaction</a>
 		</div>
 		<div class="card-body">
 			<div class="row">

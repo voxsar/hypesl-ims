@@ -5,7 +5,7 @@
 	@else
 	<div class="col-sm-12">
 	@endif
-		<input @if(isset($viewmode) && $viewmode != "no") {{$viewmode}} @else name="{{$name}}" @endif class="form-control @if(isset($class)) {{$class}} @endif" @isset($type) type="{{$type}}" @else type="text" @endisset placeholder="{{$label}}" 
+		<input @if(isset($viewmode) && $viewmode != "no") {{$viewmode}} @else name="{{$name}}" @endif class="form-control @if(isset($class)) {{$class}} @endif" @isset($type) type="{{$type}}" @else type="text" @endisset placeholder="@if(isset($label) && $label != ''){{$label}}@endif" 
         @if(isset($value))
         	value="{{old($name, $value)}}"
         @else
