@@ -3,7 +3,7 @@
 	<div class="col-sm-8">
 		<div class="input-group mb-3">
 		    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-calendar" id="basic-addon1"></i></span></div>
-		    <input {{$disabled}} name="{{$name}}" type="text" placeholder="{{$label}}" aria-label="{{$label}}" class="form-control boot-date @if(isset($class)) {{$class}} @endif"
+		    <input @isset($disabled){{$disabled}}@endisset name="{{$name}}" type="text" placeholder="{{$label}}" aria-label="{{$label}}" class="form-control boot-date @if(isset($class)) {{$class}} @endif"
 		    @if(isset($value))
 	        	value="{{old($name, $value)}}"
 	        @else
