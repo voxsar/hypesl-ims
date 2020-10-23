@@ -49,7 +49,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($invoice->items as $key => $item)
+                                @forelse($invoice->transaction->journals as $key => $item)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
                                         <td>{{$item->description}}</td>
