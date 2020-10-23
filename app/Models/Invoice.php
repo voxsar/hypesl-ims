@@ -17,6 +17,7 @@ class Invoice extends Model
      * @var array
      */
     protected $dates = [
+        'invoice_date',
         'due_date',
     ];
 
