@@ -24,7 +24,7 @@
                 <div class="row mb-5">
                     <div class="col-md-6 mb-3 mb-sm-0">
                         <h5 class="font-weight-bold">Bill From</h5>
-                        <p>Points Automated Billing</p><span style="white-space: pre-line">
+                        <p>Hype Automated Billing</p><span style="white-space: pre-line">
                             
                         </span>
                     </div>
