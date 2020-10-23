@@ -37,7 +37,7 @@ class Account extends Model
     {
         return Account::firstOrCreate(
             ['name' => 'Accounts Receivable'], 
-            ['type' => 'Asset']
+            ['type' => 'Assets']
         );
     }
 
@@ -90,7 +90,7 @@ class Account extends Model
      */
     public function scopeEquity($query)
     {
-        return $query->where('type', 'Equity');
+        return $query->where('type', 'Equities');
     }
 
     /**
