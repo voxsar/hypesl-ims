@@ -42,7 +42,7 @@
 							</div>
 	                    </div>
 	                    <div class="tab-pane fade" id="profileBasic" role="tabpanel" aria-labelledby="profile-basic-tab">
-							@include("invoices.table", ["invoices" => $contact->invoices])
+							
 	                    </div>
 	                    <div class="tab-pane fade" id="contactBasic" role="tabpanel" aria-labelledby="contact-basic-tab">
 	                    	

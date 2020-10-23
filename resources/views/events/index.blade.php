@@ -216,9 +216,9 @@
 							</div>
 					    </div>
 					    <div class="col-md-6">
-					    	<x-select2 name="mentor" class="mentor" label="Mentor" :dbmodel="$users" :visible="['fname', 'lname']" />
+					    	<x-select2 name="mentor" class="mentor" label="Host" :dbmodel="$users" :visible="['fname', 'lname']" />
 
-					    	<x-select2 name="contacts[]" class="contacts"  multiple="multiple" label="Select student (or private appointment)" :dbmodel="$contacts" :visible="['fname', 'lname']" />
+					    	<x-select2 name="contacts[]" class="contacts"  multiple="multiple" label="Participants" :dbmodel="$contacts" :visible="['fname', 'lname']" />
 
 					    	<x-select2 name="appointment_type" class="appointment_type" label="Event Type" :dbmodel="$appointmenttypes" :visible="['name']" />
 

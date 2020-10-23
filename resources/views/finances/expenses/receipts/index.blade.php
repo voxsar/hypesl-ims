@@ -4,7 +4,7 @@
 	<div class="card">
 		<div class="card-header">
 			Payments
-			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('payments.create')}}">Add Payment</a>
+			<a class="d-inline-flex align-items-end btn btn-primary" href="{{route('expenses.receipts.create', ['expense' => $expense->id])}}">Add Payment</a>
 		</div>
 		<div class="card-body">
 			<div class="row">
