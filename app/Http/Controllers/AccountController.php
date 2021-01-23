@@ -65,6 +65,8 @@ class AccountController extends Controller
     public function show(Account $account)
     {
         //
+        $data = array('account' => $account);
+        return view('finances.accounts.show', $data);
     }
 
     /**

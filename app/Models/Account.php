@@ -24,7 +24,7 @@ class Account extends Model
     public function journals()
     {
     	# code...
-        return $this->belongsTo('App\Models\Journal');
+        return $this->hasMany('App\Models\Journal');
     }
 
     public function subaccounts()

@@ -10,7 +10,7 @@
 	<tbody class="table-bordered">
 		@forelse($accounts as $account)
 			<tr>
-				<td>{{$account->name}}</td>
+				<td><a href="{{url('accounts', $account->id)}}">{{$account->name}}</a></td>
 				<td>{{$account->type}}</td>
 				<td>
 					<div class="btn-group dropleft">

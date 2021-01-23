@@ -37,6 +37,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 	Route::resource('appointments', AppointmentController::class);
 	Route::resource('contacts', ContactController::class);
 
+	Route::get('accounts/{account}/t', [AccountController::class, 't']);
 	Route::resource('accounts', AccountController::class);
 	Route::resource('accounts.subaccounts', SubAccountController::class)->scoped();
 
